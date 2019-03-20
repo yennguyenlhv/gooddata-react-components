@@ -2,7 +2,7 @@
 
 const demoProject = {
     'https://secure.gooddata.com': 'k26dtejorcqlqf11crn6imbeevp2q4kg',
-    'https://staging3.intgdc.com': 'kytra720hke4d84e8ozohoz7uycn53mi',
+    'https://staging3.intgdc.com': 'kapunjl01o2xm7oy0xo88uagoigce6iq',
     'https://staging2.intgdc.com': 'ws7pxsamkx8o0t1s7kfvkj5o41uwcmqg',
     'https://staging.intgdc.com': 'na1q8a0q4efb7cajbgre9mmm776dr1yv',
     'https://client-demo-be.na.intgdc.com': '',
@@ -41,7 +41,7 @@ export const locationCityDisplayFormIdentifier = 'label.restaurantlocation.locat
 export const locationIdAttributeIdentifier = 'attr.restaurantlocation.locationid';
 export const locationNameAttributeUri = `/gdc/md/${demoProjectId}/obj/2204`;
 export const locationNameDisplayFormIdentifier = 'label.restaurantlocation.locationname';
-export const locationResortIdentifier = 'label.restaurantlocation.locationresort';
+export const locationResortIdentifier = 'attr.department.department';
 export const locationStateAttributeIdentifier = 'attr.restaurantlocation.locationstate';
 export const locationStateAttributeUri = `/gdc/md/${demoProjectId}/obj/2210`;
 export const locationStateAttributeCaliforniaUri = `/gdc/md/${demoProjectId}/obj/2210/elements?id=6340116`;
@@ -55,6 +55,6 @@ export const monthDateIdentifier = 'date.abm81lMifn6q';
 export const monthDateIdentifierJanuary = `/gdc/md/${demoProjectId}/obj/2071/elements?id=1`;
 export const numberOfChecksIdentifier = 'aeOt50ngicOD';
 export const tableVisualizationIdentifier = 'aatFRvXBdilm';
-export const totalSalesIdentifier = 'aa7ulGyKhIE5';
+export const totalSalesIdentifier = 'fact.salary.payment';
 export const numberOfRestaurantsIdentifier = 'aawAq8YqhM3o';
 export const averageRestaurantDailyCostsIdentifier = 'aaQJzQzoeKwZ';
