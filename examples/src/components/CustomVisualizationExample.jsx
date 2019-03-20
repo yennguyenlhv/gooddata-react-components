@@ -31,7 +31,7 @@ export class CustomVisualization extends Component {
     getData(executionResult) {
         const executionData = get(executionResult, 'data', []);
 
-        const data = unzip(executionData).map((pointArray, valueIndex) => {
+        const data = unzip(executionData).map((pointArray, value) => {
             const label = get(executionResult, `headerItems[1][0][${valueIndex}].attributeHeaderItem.name`);
             const pointObject = {
                 label
