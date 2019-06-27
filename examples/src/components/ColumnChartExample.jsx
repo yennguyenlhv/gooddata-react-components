@@ -33,6 +33,16 @@ export class ColumnChartExample extends Component {
                     viewBy={month}
                     onLoadingChanged={this.onLoadingChanged}
                     onError={this.onError}
+                    config={{
+                        secondary_yaxis: {
+                            visible: true, // boolean
+                            labelsEnabled: true, // boolean
+                            rotation: 'auto', // string
+                            min: '300', // numeral string
+                            max: '400', // numeral string
+                            measures: ['totalSalesIdentifier']
+                        }
+                    }}
                 />
             </div>
         );
