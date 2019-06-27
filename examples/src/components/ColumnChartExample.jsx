@@ -21,6 +21,7 @@ export class ColumnChartExample extends Component {
     render() {
         const totalSales = Model.measure(totalSalesIdentifier)
             .format("#,##0")
+            .localIdentifier("identifier_totalSalesIdentifier")
             .alias("$ Total Sales");
 
         const month = Model.attribute(monthDateIdentifier);
@@ -40,7 +41,7 @@ export class ColumnChartExample extends Component {
                             rotation: 'auto', // string
                             min: '300', // numeral string
                             max: '400', // numeral string
-                            measures: ['totalSalesIdentifier']
+                            measures: ['identifier_totalSalesIdentifier']
                         }
                     }}
                 />
