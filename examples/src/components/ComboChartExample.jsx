@@ -55,7 +55,7 @@ export class ComboChartExample extends Component {
                                 visible: true,
                                 labelsEnabled: true,
                                 rotation: '', // ('60'/ '90'/ '30'/ 'auto')
-                                min: '100000',
+                                min: '200000',
                                 max: '',
                                  measures: ["S1", "S2", "S3"]     
                              },
