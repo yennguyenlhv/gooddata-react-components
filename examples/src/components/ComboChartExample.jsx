@@ -49,8 +49,8 @@ export class ComboChartExample extends Component {
                     config={
                         {                            
                             dualAxis: true,
-                            primaryChartType: 'line', // string
-                            secondaryChartType: 'area' // string                        
+                            primaryChartType: 'column', // string
+                            secondaryChartType: 'column' // string                        
                         }
                     }
                 />
