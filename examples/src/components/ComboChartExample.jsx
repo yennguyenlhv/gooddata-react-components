@@ -48,7 +48,9 @@ export class ComboChartExample extends Component {
                     onError={this.onError}
                     config={
                         {                            
-                            dualAxis: false                        
+                            dualAxis: true,
+                            primaryChartType: 'line', // string
+                            secondaryChartType: 'area' // string                        
                         }
                     }
                 />
