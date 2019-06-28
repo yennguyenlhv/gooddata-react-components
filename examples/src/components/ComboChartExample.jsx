@@ -46,6 +46,11 @@ export class ComboChartExample extends Component {
                     viewBy={locationResort}
                     onLoadingChanged={this.onLoadingChanged}
                     onError={this.onError}
+                    config={
+                        {                            
+                            dualAxis: false                        
+                        }
+                    }
                 />
             </div>
         );
