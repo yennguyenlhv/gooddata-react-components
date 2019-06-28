@@ -50,7 +50,44 @@ export class ComboChartExample extends Component {
                         {                            
                             dualAxis: true,
                             primaryChartType: 'column', // string
-                            secondaryChartType: 'column' // string                        
+                            secondaryChartType: 'column', // string    
+                            secondary_yaxis: {
+                                visible: true,
+                                labelsEnabled: true,
+                                rotation: '', // ('60'/ '90'/ '30'/ 'auto')
+                                min: '10000',
+                                max: '',
+                                 measures: ["S1", "S2", "S3"]     
+                             },
+             xaxis: {
+                     visible: true, // boolean
+                     labelsEnabled: true, // boolean
+                     rotation: '60', // 'auto' or numeral string
+                     min: '', // numeral string
+                     max: '' // numeral string
+                 },
+                 
+                 yaxis: {
+                     visible: true, // boolean
+                     labelsEnabled: true, // boolean
+                     rotation: '60', // string
+                     min: '100000', // numeral string
+                     max: '' // numeral string
+                 },
+                 legend: {
+                     enabled: true, // boolean
+                     position: 'left', // 'top' | 'left' | 'right' | 'bottom'
+                 },
+                 dataLabels: {
+                     visible: 'true' // 'auto' | true | false
+                 },
+                 grid: {
+                     enabled: false // boolean
+                 },
+                 separators: {
+                     thousand: ',',
+                     decimal: '.'
+                 }                    
                         }
                     }
                 />
