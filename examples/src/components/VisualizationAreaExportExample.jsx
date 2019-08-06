@@ -8,11 +8,16 @@ import ExampleWithExport from "./utils/ExampleWithExport";
 import { projectId, areaVisualizationIdentifier } from "../utils/fixtures";
 
 export class VisualizationAreaExportExample extends Component {
-    render() {
+    render() {       
+
         return (
-            <div style={{ height: 300 }} className="s-visualization-area">
-                <Visualization projectId={projectId} identifier={areaVisualizationIdentifier} />
-            </div>
+            <ExampleWithExport>
+                {onExportReady => (
+                    <div style={{ height: 300 }} className="s-visualization-area">
+                        <Visualization projectId={projectId} identifier={areaVisualizationIdentifier} />
+                    </div>
+                )}
+            </ExampleWithExport>
         );
     }
 }
