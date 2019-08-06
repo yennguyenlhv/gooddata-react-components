@@ -5,17 +5,17 @@ import "@gooddata/react-components/styles/css/main.css";
 
 import ExampleWithExport from "./utils/ExampleWithExport";
 
-import { bubbleVisualizationUri, projectId } from "../utils/fixtures";
+import { lineVisualizationIdentifier, projectId } from "../utils/fixtures";
 
-export class VisualizationBubbleExportExample extends Component {
+export class VisualizationLineExportExample extends Component {
     render() {
         return (
             <ExampleWithExport>
                 {onExportReady => (
-                    <div style={{ height: 300 }} className="s-visualization-bubble">
+                    <div style={{ height: 300 }} className="s-visualization-chart">
                         <Visualization
                             projectId={projectId}
-                            uri={bubbleVisualizationUri}
+                            identifier={lineVisualizationIdentifier}
                             onExportReady={onExportReady}
                         />
                     </div>
@@ -25,4 +25,4 @@ export class VisualizationBubbleExportExample extends Component {
     }
 }
 
-export default VisualizationBubbleExportExample;
+export default VisualizationLineExportExample;

@@ -5,21 +5,25 @@ import ExampleWithSource from "../components/utils/ExampleWithSource";
 import BarChartExportExample from "../components/BarChartExportExample";
 import TableExportExample from "../components/TableExportExample";
 import PivotTableExportExample from "../components/PivotTableExportExample";
+import LineChartExportExample from "../components/LineChartExportExample";
 import AreaChartExportExample from "../components/AreaChartExportExample";
 import BubbleChartExportExample from "../components/BubbleChartExportExample";
 import VisualizationStackAreaExportExample from "../components/VisualizationStackAreaExportExample";
 import VisualizationColumnChartExportExample from "../components/VisualizationColumnChartExportExample";
 import VisualizationBubbleExportExample from "../components/VisualizationBubbleExportExample";
+import VisualizationLineExportExample from "../components/VisualizationLineExportExample";
 import HeadlineExportExample from "../components/HeadlineExportExample";
 
 import BarChartExportExampleSRC from "!raw-loader!../components/BarChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import TableExportExampleSRC from "!raw-loader!../components/TableExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import PivotTableExportExampleSRC from "!raw-loader!../components/PivotTableExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import LineChartExportExampleSRC from "!raw-loader!../components/LineChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import AreaChartExportExampleSRC from "!raw-loader!../components/AreaChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import BubbleChartExportExampleSRC from "!raw-loader!../components/BubbleChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import VisualizationStackAreaExportExampleSRC from "!raw-loader!../components/VisualizationStackAreaExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import VisualizationColumnChartExportExampleSRC from "!raw-loader!../components/VisualizationColumnChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
-import VisualizationBubbleExportExampleSRC from "!raw-loader!../components/VisualizationColumnChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import VisualizationBubbleExportExampleSRC from "!raw-loader!../components/VisualizationBubbleExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import VisualizationLineExportExampleSRC from "!raw-loader!../components/VisualizationLineExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import HeadlineExportExampleSRC from "!raw-loader!../components/HeadlineExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const Export = () => (
@@ -63,6 +67,11 @@ export const Export = () => (
 
         <hr className="separator" />
 
+        <h2>Export Line Chart</h2>
+        <ExampleWithSource for={LineChartExportExample} source={LineChartExportExampleSRC} />
+
+        <hr className="separator" />
+
         <h2>Export Area Chart</h2>
         <ExampleWithSource for={AreaChartExportExample} source={AreaChartExportExampleSRC} />
 
@@ -75,6 +84,11 @@ export const Export = () => (
 
         <h2>Export Headline Data</h2>
         <ExampleWithSource for={HeadlineExportExample} source={HeadlineExportExampleSRC} />
+
+        <hr className="separator" />
+
+        <h2>Export Line Visualization</h2>
+        <ExampleWithSource for={VisualizationLineExportExample} source={VisualizationLineExportExampleSRC} />
 
         <hr className="separator" />
 
