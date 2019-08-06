@@ -6,6 +6,7 @@ import BarChartExportExample from "../components/BarChartExportExample";
 import TableExportExample from "../components/TableExportExample";
 import PivotTableExportExample from "../components/PivotTableExportExample";
 import AreaChartExportExample from "../components/AreaChartExportExample";
+import VisualizationAreaExportExample from "../components/AreaChartExportExample";
 import VisualizationColumnChartExportExample from "../components/VisualizationColumnChartExportExample";
 import HeadlineExportExample from "../components/HeadlineExportExample";
 
@@ -13,7 +14,7 @@ import BarChartExportExampleSRC from "!raw-loader!../components/BarChartExportEx
 import TableExportExampleSRC from "!raw-loader!../components/TableExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import PivotTableExportExampleSRC from "!raw-loader!../components/PivotTableExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import AreaChartExportExampleSRC from "!raw-loader!../components/AreaChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
-import VisualizationColumnChartExportExampleSRC from "!raw-loader!../components/VisualizationColumnChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import VisualizationAreaExportExampleSRC from "!raw-loader!../components/VisualizationColumnChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import HeadlineExportExampleSRC from "!raw-loader!../components/HeadlineExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const Export = () => (
@@ -56,8 +57,14 @@ export const Export = () => (
         />
 
         <hr className="separator" />
+
         <h2>Export Headline Data</h2>
         <ExampleWithSource for={HeadlineExportExample} source={HeadlineExportExampleSRC} />
+
+        <hr className="separator" />
+        
+        <h2>Export Area Visualization</h2>
+        <ExampleWithSource for={VisualizationAreaExportExample} source={VisualizationAreaExportExampleSRC} />
     </div>
 );
 
