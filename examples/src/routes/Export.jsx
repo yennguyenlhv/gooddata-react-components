@@ -9,6 +9,7 @@ import AreaChartExportExample from "../components/AreaChartExportExample";
 import BubbleChartExportExample from "../components/BubbleChartExportExample";
 import VisualizationStackAreaExportExample from "../components/VisualizationStackAreaExportExample";
 import VisualizationColumnChartExportExample from "../components/VisualizationColumnChartExportExample";
+import VisualizationBubbleExportExample from "../components/VisualizationBubbleExportExample";
 import HeadlineExportExample from "../components/HeadlineExportExample";
 
 import BarChartExportExampleSRC from "!raw-loader!../components/BarChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
@@ -18,6 +19,7 @@ import AreaChartExportExampleSRC from "!raw-loader!../components/AreaChartExport
 import BubbleChartExportExampleSRC from "!raw-loader!../components/BubbleChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import VisualizationStackAreaExportExampleSRC from "!raw-loader!../components/VisualizationStackAreaExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import VisualizationColumnChartExportExampleSRC from "!raw-loader!../components/VisualizationColumnChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import VisualizationBubbleExportExampleSRC from "!raw-loader!../components/VisualizationColumnChartExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import HeadlineExportExampleSRC from "!raw-loader!../components/HeadlineExportExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const Export = () => (
@@ -49,6 +51,14 @@ export const Export = () => (
         <ExampleWithSource
             for={VisualizationColumnChartExportExample}
             source={VisualizationColumnChartExportExampleSRC}
+        />
+
+        <hr className="separator" />
+
+        <h2>Export Bubble Visualization </h2>
+        <ExampleWithSource
+            for={VisualizationBubbleExportExample}
+            source={VisualizationBubbleExportExampleSRC}
         />
 
         <hr className="separator" />
