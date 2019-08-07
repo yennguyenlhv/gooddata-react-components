@@ -9,7 +9,11 @@ export class VisualizationColumnChartByIdentifierExample extends Component {
     render() {
         return (
             <div style={{ height: 300 }} className="s-visualization-chart">
-                <Visualization projectId={projectId} uri={columnVisualizationUri} />
+                <Visualization
+                    projectId={projectId}
+                    uri={columnVisualizationUri}
+                    experimentalVisExecution={true}
+                />
             </div>
         );
     }

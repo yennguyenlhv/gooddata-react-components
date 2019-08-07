@@ -2,7 +2,7 @@
 
 const demoProject = {
     "https://secure.gooddata.com": "k26dtejorcqlqf11crn6imbeevp2q4kg",
-    "https://staging3.intgdc.com": "kytra720hke4d84e8ozohoz7uycn53mi",
+    "https://staging3.intgdc.com": "ht3owbpk6h0yfjtkcsgva3osu3z7paol",
     "https://staging2.intgdc.com": "ws7pxsamkx8o0t1s7kfvkj5o41uwcmqg",
     "https://staging.intgdc.com": "na1q8a0q4efb7cajbgre9mmm776dr1yv",
     "https://developer.na.gooddata.com": "xms7ga4tf3g3nzucd8380o2bev8oeknp",
@@ -25,6 +25,7 @@ export const averageCheckSizeByServer = "afewRzGAersh";
 export const averageDailyTotalSales = "aagJGHg1bxap";
 export const barVisualizationIdentifier = "aaKaMZUJeyGo";
 export const barVisualizationUri = `/gdc/md/${demoProjectId}/obj/9285`;
+export const PivotTableVisualizationUri = `/gdc/md/${demoProjectId}/obj/9153`;
 export const dualAxisBarVisualizationIdentifier = "acSoPx4Mc7Rr";
 export const lineVisualizationIdentifier = "aaAaDFt4c1yC";
 export const lineVisualizationUri = `/gdc/md/${demoProjectId}/obj/9276`;

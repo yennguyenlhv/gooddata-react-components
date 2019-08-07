@@ -9,7 +9,11 @@ export class VisualizationTable extends Component {
     render() {
         return (
             <div style={{ height: 300 }} className="s-visualization-treemap">
-                <Visualization projectId={projectId} uri={treemapVisualizationUri} />
+                <Visualization
+                    projectId={projectId}
+                    uri={treemapVisualizationUri}
+                    experimentalVisExecution={true}
+                />
             </div>
         );
     }

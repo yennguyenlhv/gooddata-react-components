@@ -36,6 +36,7 @@ export class VisualizationDualAxisBarChartExample extends Component {
                 <Visualization
                     projectId={projectId}
                     identifier={dualAxisBarVisualizationIdentifier}
+                    experimentalVisExecution={true}
                     config={config}
                 />
             </div>

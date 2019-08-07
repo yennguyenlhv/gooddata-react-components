@@ -9,7 +9,11 @@ export class VisualizationTable extends Component {
     render() {
         return (
             <div style={{ height: 300 }} className="s-visualization-scatter">
-                <Visualization projectId={projectId} uri={scatterVisualizationUri} />
+                <Visualization
+                    projectId={projectId}
+                    uri={scatterVisualizationUri}
+                    experimentalVisExecution={true}
+                />
             </div>
         );
     }

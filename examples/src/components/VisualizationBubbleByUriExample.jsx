@@ -9,7 +9,11 @@ export class VisualizationTable extends Component {
     render() {
         return (
             <div style={{ height: 300 }} className="s-visualization-bubble">
-                <Visualization projectId={projectId} uri={bubbleVisualizationUri} />
+                <Visualization
+                    projectId={projectId}
+                    uri={bubbleVisualizationUri}
+                    experimentalVisExecution={true}
+                />
             </div>
         );
     }

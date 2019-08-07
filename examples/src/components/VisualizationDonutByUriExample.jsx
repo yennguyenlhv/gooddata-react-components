@@ -9,7 +9,11 @@ export class VisualizationTable extends Component {
     render() {
         return (
             <div style={{ height: 300 }} className="s-visualization-donut">
-                <Visualization projectId={projectId} uri={donutVisualizationUri} />
+                <Visualization
+                    projectId={projectId}
+                    uri={donutVisualizationUri}
+                    experimentalVisExecution={true}
+                />
             </div>
         );
     }

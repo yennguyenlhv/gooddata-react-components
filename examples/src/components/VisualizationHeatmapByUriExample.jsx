@@ -9,7 +9,11 @@ export class VisualizationTable extends Component {
     render() {
         return (
             <div style={{ height: 300 }} className="s-visualization-heatmap">
-                <Visualization projectId={projectId} uri={heatmapVisualizationUri} />
+                <Visualization
+                    projectId={projectId}
+                    uri={heatmapVisualizationUri}
+                    experimentalVisExecution={true}
+                />
             </div>
         );
     }
