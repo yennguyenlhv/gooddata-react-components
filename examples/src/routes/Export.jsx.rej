@@ -1,0 +1,7 @@
+diff a/examples/src/routes/Export.jsx b/examples/src/routes/Export.jsx	(rejected hunks)
+@@ -91,4 +91 @@ export const Export = () => (
+-        <ExampleWithSource
+-            for={VisualizationLineExportExample}
+-            source={VisualizationLineExportExampleSRC}
+-        />
++        <ExampleWithSource for={VisualizationLineExportExample} source={VisualizationLineExportExampleSRC} />
