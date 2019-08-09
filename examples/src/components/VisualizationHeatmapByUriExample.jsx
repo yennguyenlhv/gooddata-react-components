@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "@gooddata/react-components/styles/css/main.css";
 import { Visualization } from "@gooddata/react-components";
 
-import { projectId, heatmapVisualizationUri } from "../utils/fixtures";
+import { projectId, heatmapVisualizationUri, Stg3HeatMapVisualizationUri } from "../utils/fixtures";
 
 export class VisualizationTable extends Component {
     render() {
@@ -11,7 +11,8 @@ export class VisualizationTable extends Component {
             <div style={{ height: 300 }} className="s-visualization-heatmap">
                 <Visualization
                     projectId={projectId}
-                    uri={heatmapVisualizationUri}
+                    //uri={heatmapVisualizationUri}
+                    uri={Stg3HeatMapVisualizationUri}
                     experimentalVisExecution={true}
                 />
             </div>

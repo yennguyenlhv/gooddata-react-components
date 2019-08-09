@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "@gooddata/react-components/styles/css/main.css";
 import { Visualization } from "@gooddata/react-components";
 
-import { projectId, pieVisualizationUri } from "../utils/fixtures";
+import { projectId, pieVisualizationUri, Stg3PieVisualizationUri } from "../utils/fixtures";
 
 export class VisualizationTable extends Component {
     render() {
@@ -11,7 +11,8 @@ export class VisualizationTable extends Component {
             <div style={{ height: 300 }} className="s-visualization-pie">
                 <Visualization
                     projectId={projectId}
-                    uri={pieVisualizationUri}
+                    //uri={pieVisualizationUri}
+                    uri={Stg3PieVisualizationUri}
                     experimentalVisExecution={true}
                 />
             </div>

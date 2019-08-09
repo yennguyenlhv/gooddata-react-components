@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "@gooddata/react-components/styles/css/main.css";
 import { Visualization } from "@gooddata/react-components";
 
-import { projectId, bubbleVisualizationUri } from "../utils/fixtures";
+import { projectId, bubbleVisualizationUri, Stg3BubbleVisualizationUri } from "../utils/fixtures";
 
 export class VisualizationTable extends Component {
     render() {
@@ -11,7 +11,8 @@ export class VisualizationTable extends Component {
             <div style={{ height: 300 }} className="s-visualization-bubble">
                 <Visualization
                     projectId={projectId}
-                    uri={bubbleVisualizationUri}
+                    //uri={bubbleVisualizationUri}
+                    uri={Stg3BubbleVisualizationUri}
                     experimentalVisExecution={true}
                 />
             </div>

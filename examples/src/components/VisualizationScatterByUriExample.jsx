@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "@gooddata/react-components/styles/css/main.css";
 import { Visualization } from "@gooddata/react-components";
 
-import { projectId, scatterVisualizationUri } from "../utils/fixtures";
+import { projectId, scatterVisualizationUri, Stg3ScatterVisualizationUri } from "../utils/fixtures";
 
 export class VisualizationTable extends Component {
     render() {
@@ -11,7 +11,8 @@ export class VisualizationTable extends Component {
             <div style={{ height: 300 }} className="s-visualization-scatter">
                 <Visualization
                     projectId={projectId}
-                    uri={scatterVisualizationUri}
+                    //uri={scatterVisualizationUri}
+                    uri={Stg3ScatterVisualizationUri}
                     experimentalVisExecution={true}
                 />
             </div>

@@ -1,0 +1,8 @@
+diff a/examples/src/components/VisualizationHeadlineByUriExample.jsx b/examples/src/components/VisualizationHeadlineByUriExample.jsx	(rejected hunks)
+@@ -12 +12,5 @@ export class VisualizationTable extends Component {
+-                <Visualization projectId={projectId} uri={headlineVisualizationUri} experimentalVisExecution={true}/>
++                <Visualization
++                    projectId={projectId}
++                    uri={headlineVisualizationUri}
++                    experimentalVisExecution={true}
++                />

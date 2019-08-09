@@ -1,0 +1,9 @@
+diff a/examples/src/components/VisualizationBubbleByUriExample.jsx b/examples/src/components/VisualizationBubbleByUriExample.jsx	(rejected hunks)
+@@ -12,3 +12,4 @@ export class VisualizationTable extends Component {
+-                <Visualization projectId={projectId} 
+-                 uri={bubbleVisualizationUri}
+-                 experimentalVisExecution={true}
++                <Visualization
++                    projectId={projectId}
++                    uri={bubbleVisualizationUri}
++                    experimentalVisExecution={true}

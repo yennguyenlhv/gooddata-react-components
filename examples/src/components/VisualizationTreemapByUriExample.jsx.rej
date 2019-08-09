@@ -1,0 +1,8 @@
+diff a/examples/src/components/VisualizationTreemapByUriExample.jsx b/examples/src/components/VisualizationTreemapByUriExample.jsx	(rejected hunks)
+@@ -12 +12,5 @@ export class VisualizationTable extends Component {
+-                <Visualization projectId={projectId} uri={treemapVisualizationUri} experimentalVisExecution={true} />
++                <Visualization
++                    projectId={projectId}
++                    uri={treemapVisualizationUri}
++                    experimentalVisExecution={true}
++                />

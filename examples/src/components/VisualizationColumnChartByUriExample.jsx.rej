@@ -1,0 +1,8 @@
+diff a/examples/src/components/VisualizationColumnChartByUriExample.jsx b/examples/src/components/VisualizationColumnChartByUriExample.jsx	(rejected hunks)
+@@ -12,2 +12,4 @@ export class VisualizationColumnChartByIdentifierExample extends Component {
+-                <Visualization projectId={projectId} uri={columnVisualizationUri} 
+-                experimentalVisExecution={true}
++                <Visualization
++                    projectId={projectId}
++                    uri={columnVisualizationUri}
++                    experimentalVisExecution={true}

@@ -4,9 +4,11 @@ import ExampleWithSource from "../components/utils/ExampleWithSource";
 
 import DatePickerExample from "../components/DatePickerExample";
 import MonthPickerExample from "../components/MonthPickerExample";
+import ExecuteVisualizationDatePickerExample from "../components/ExecuteVisualizationDatePickerExample";
 
 import DatePickerExampleSRC from "!raw-loader!../components/DatePickerExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import MonthPickerExampleSRC from "!raw-loader!../components/MonthPickerExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import ExecuteVisualizationDatePickerExampleSRC from "!raw-loader!../components/ExecuteVisualizationDatePickerExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const DatePicker = () => (
     <div>
@@ -27,6 +29,15 @@ export const DatePicker = () => (
         </p>
 
         <ExampleWithSource for={MonthPickerExample} source={MonthPickerExampleSRC} />
+
+        <h1>Execute visualization with Date Picker</h1>
+
+        <p>This is an example check Execute visualization after reseclect date on Date Picker</p>
+
+        <ExampleWithSource
+            for={ExecuteVisualizationDatePickerExample}
+            source={ExecuteVisualizationDatePickerExampleSRC}
+        />
     </div>
 );
 

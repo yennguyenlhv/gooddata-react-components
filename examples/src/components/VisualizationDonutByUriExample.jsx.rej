@@ -1,0 +1,9 @@
+diff a/examples/src/components/VisualizationDonutByUriExample.jsx b/examples/src/components/VisualizationDonutByUriExample.jsx	(rejected hunks)
+@@ -12,3 +12,4 @@ export class VisualizationTable extends Component {
+-                <Visualization projectId={projectId}
+-                 uri={donutVisualizationUri}
+-                 experimentalVisExecution={true}
++                <Visualization
++                    projectId={projectId}
++                    uri={donutVisualizationUri}
++                    experimentalVisExecution={true}

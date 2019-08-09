@@ -4,7 +4,9 @@ import React from "react";
 import ExampleWithSource from "../components/utils/ExampleWithSource";
 
 import ParentFilterExample from "../components/ParentFilterExample";
+import ExecuteVisualizationParentFilterExample from "../components/ExecuteVisualizationParentFilterExample";
 import ParentFilterExampleSRC from "!raw-loader!../components/ParentFilterExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import ExecuteVisualizationParentFilterExampleSRC from "!raw-loader!../components/ExecuteVisualizationParentFilterExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const ParentFilter = () => (
     <div>
@@ -18,6 +20,13 @@ export const ParentFilter = () => (
         <hr className="separator" />
 
         <ExampleWithSource for={ParentFilterExample} source={ParentFilterExampleSRC} />
+
+        <hr className="separator" />
+
+        <ExampleWithSource
+            for={ExecuteVisualizationParentFilterExample}
+            source={ExecuteVisualizationParentFilterExampleSRC}
+        />
     </div>
 );
 

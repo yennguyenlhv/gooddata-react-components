@@ -4,7 +4,7 @@ import { Visualization } from "@gooddata/react-components";
 
 import "@gooddata/react-components/styles/css/main.css";
 
-import { columnsVisualizationIdentifier, projectId } from "../utils/fixtures";
+import { columnsVisualizationIdentifier, Stg3ConfigVisualizationUri, projectId } from "../utils/fixtures";
 import { CUSTOM_COLOR_PALETTE } from "../utils/colors";
 
 const defaultProperties = {};
@@ -91,7 +91,8 @@ export class ConfigurationColumnChartExample extends Component {
 
                     <Visualization
                         projectId={projectId}
-                        identifier={columnsVisualizationIdentifier}
+                        //identifier={columnsVisualizationIdentifier}
+                        uri={Stg3ConfigVisualizationUri}
                         config={config}
                     />
                 </div>

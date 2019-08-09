@@ -3,7 +3,7 @@ import React, { Component } from "react";
 import "@gooddata/react-components/styles/css/main.css";
 import { Visualization } from "@gooddata/react-components";
 
-import { projectId, tableVisualizationUri } from "../utils/fixtures";
+import { projectId, tableVisualizationUri, Stg3PivotTableVisualizationUri } from "../utils/fixtures";
 
 export class VisualizationTable extends Component {
     render() {
@@ -11,7 +11,8 @@ export class VisualizationTable extends Component {
             <div style={{ height: 300 }} className="s-visualization-table">
                 <Visualization
                     projectId={projectId}
-                    uri={tableVisualizationUri}
+                    //uri={tableVisualizationUri}
+                    uri={Stg3PivotTableVisualizationUri}
                     experimentalVisExecution={true}
                 />
             </div>

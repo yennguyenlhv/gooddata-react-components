@@ -8,6 +8,7 @@ import {
     dualAxisBarVisualizationIdentifier,
     totalSalesLocalIdentifier,
     totalCostsLocalIdentifier,
+    Stg3ConfigVisualizationUri,
 } from "../utils/fixtures";
 
 export class VisualizationDualAxisBarChartExample extends Component {
@@ -35,7 +36,8 @@ export class VisualizationDualAxisBarChartExample extends Component {
             <div style={{ height: 300 }} className="s-visualization-dual-axis-bar">
                 <Visualization
                     projectId={projectId}
-                    identifier={dualAxisBarVisualizationIdentifier}
+                    //identifier={dualAxisBarVisualizationIdentifier}
+                    uri={Stg3ConfigVisualizationUri}
                     experimentalVisExecution={true}
                     config={config}
                 />

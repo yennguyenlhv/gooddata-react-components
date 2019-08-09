@@ -1,0 +1,7 @@
+diff a/examples/src/routes/VisualizationByUri.jsx b/examples/src/routes/VisualizationByUri.jsx	(rejected hunks)
+@@ -108 +108,4 @@ export const VisualizationByUri = () => (
+-        <ExampleWithSource for={VisualizationPivotTableByUriExample} source={VisualizationPivotTableByUriExampleSRC} />
++        <ExampleWithSource
++            for={VisualizationPivotTableByUriExample}
++            source={VisualizationPivotTableByUriExampleSRC}
++        />

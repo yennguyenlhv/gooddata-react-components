@@ -2,9 +2,11 @@
 /* eslint-disable react/jsx-closing-tag-location */
 import React from "react";
 import ExampleWithSource from "../components/utils/ExampleWithSource";
+import ExecuteVisualizationDrillWithExternalDataExample from "../components/ExecuteVisualizationDrillWithExternalDataExample";
 
 import DrillWithExternalDataExample from "../components/DrillWithExternalDataExample";
 import DrillWithExternalDataExampleSRC from "!raw-loader!../components/DrillWithExternalDataExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import ExecuteVisualizationDrillWithExternalDataExampleSRC from "!raw-loader!../components/ExecuteVisualizationDrillWithExternalDataExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const DrillWithExternalData = () => (
     <div className="example-wrapper">
@@ -31,6 +33,12 @@ export const DrillWithExternalData = () => (
         </div>
 
         <ExampleWithSource for={DrillWithExternalDataExample} source={DrillWithExternalDataExampleSRC} />
+
+        <h1>Execute visualization and Drill With External Data</h1>
+        <ExampleWithSource
+            for={ExecuteVisualizationDrillWithExternalDataExample}
+            source={ExecuteVisualizationDrillWithExternalDataExampleSRC}
+        />
     </div>
 );
 
