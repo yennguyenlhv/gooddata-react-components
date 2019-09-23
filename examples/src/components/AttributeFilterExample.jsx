@@ -36,6 +36,7 @@ export class AttributeFilterExample extends Component {
         } else {
             this.filterNegativeAttribute(filter);
         }
+        
     }
 
     onError(...params) {
@@ -73,7 +74,7 @@ export class AttributeFilterExample extends Component {
                         displayForm: {
                             identifier: filter.id,
                         },
-                        notIn: filter.notIn.map(element => `${locationResortUri}/elements?id=${element}`),
+                        notIn: filter.notIn.map(element => "/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2206/elements?id=63401140"),
                     },
                 },
             ];
