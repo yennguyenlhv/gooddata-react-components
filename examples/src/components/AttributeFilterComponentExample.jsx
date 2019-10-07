@@ -35,6 +35,7 @@ export class AttributeFilterComponentExample extends Component {
                     projectId={projectId}
                     filter={Model.positiveAttributeFilter(employeeNameIdentifier, ["Abbie Adams"], true)}
                     onApply={this.onApply}
+                    locale="fr-FR"
                 />
             </div>
         );
