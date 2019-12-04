@@ -24,7 +24,7 @@ export class AttributeFilterExample extends Component {
 
         this.state = {
             // you can put here some attr. elements as a default selection for filter and chart components
-            filters: [Model.negativeAttributeFilter(locationResortIdentifier, ["/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2206/elements?id=6340130"])],
+            filters: [Model.positiveAttributeFilter(locationResortIdentifier, ["/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2206/elements?id=6340130"])],
             error: null,
         };
     }
