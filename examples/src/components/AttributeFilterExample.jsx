@@ -16,7 +16,7 @@ const totalSales = Model.measure(totalSalesIdentifier)
     .format("#,##0")
     .alias("$ Total Sales");
 
-const locationResort = Model.attribute(locationResortIdentifier);
+const locationResort = Model.attribute(locationResortIdentifier).alias("New title");
 
 export class AttributeFilterExample extends Component {
     constructor(props) {
