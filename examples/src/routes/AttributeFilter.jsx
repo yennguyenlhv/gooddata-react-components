@@ -6,10 +6,14 @@ import ExampleWithSource from "../components/utils/ExampleWithSource";
 import AttributeFilterComponentExample from "../components/AttributeFilterComponentExample";
 import AttributeElementsExample from "../components/AttributeElementsExample";
 import AttributeFilterExample from "../components/AttributeFilterExample";
+import AttributeFilterExample from "../components/AttributeFilterOld";
+import AttributeFilterOldElement from "../components/AttributeFilterOldElement";
 
 import AttributeFilterComponentExampleSRC from "!raw-loader!../components/AttributeFilterComponentExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import AttributeElementsExampleSRC from "!raw-loader!../components/AttributeElementsExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 import AttributeFilterExampleSRC from "!raw-loader!../components/AttributeFilterExample"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import AttributeFilterExampleSRC from "!raw-loader!../components/AttributeFilterOld"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
+import AttributeFilterOldElementSRC from "!raw-loader!../components/AttributeFilterOldElement"; // eslint-disable-line import/no-webpack-loader-syntax, import/no-unresolved, import/extensions, import/first
 
 export const AttributeFilter = () => (
     <div>
@@ -53,6 +57,12 @@ export const AttributeFilter = () => (
             paging, attribute values and a loadMore function.
         </p>
         <ExampleWithSource for={AttributeElementsExample} source={AttributeElementsExampleSRC} />
+
+        <p>Old attribute filter on 7.2.0</p>
+        <ExampleWithSource for={AttributeFilterOld} source={AttributeFilterOldSRC} />
+
+        <p>Old element attribute filter on 7.2.0</p>
+        <ExampleWithSource for={AttributeFilterOldElement} source={AttributeFilterOldElementSRC} />
     </div>
 );
 
