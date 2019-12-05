@@ -6,7 +6,7 @@ import {
     totalSalesIdentifier,
     projectId,
     dateDatasetIdentifier,
-    monthDateIdentifier,
+    monthDateIdentifierMonthYear,
 } from "../utils/fixtures";
 
 const amountMeasure = Model.measure(totalSalesIdentifier)
