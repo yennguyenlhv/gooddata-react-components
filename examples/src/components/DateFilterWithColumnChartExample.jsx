@@ -13,7 +13,7 @@ const amountMeasure = Model.measure(totalSalesIdentifier)
     .format("#,##0")
     .alias("$ Total Sales");
 
-const monthAttribute = Model.attribute(monthDateIdentifier);
+const monthAttribute = Model.attribute(monthDateIdentifierURI);
 
 const availableGranularities = ["GDC.time.year"];
 

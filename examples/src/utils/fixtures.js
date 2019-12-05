@@ -80,6 +80,7 @@ export const monthOfYearDateIdentifier = "date.act81lMifn6q";
 export const yearDateIdentifier = "date.aag81lMifn6q";
 export const quarterDateIdentifier = "date.aam81lMifn6q";
 export const monthDateIdentifier = "date.abm81lMifn6q";
+export const monthDateIdentifierURI = "/gdc/md/xms7ga4tf3g3nzucd8380o2bev8oeknp/obj/2142";
 export const monthDateIdentifierJanuary = `/gdc/md/${demoProjectId}/obj/2071/elements?id=1`;
 export const numberOfChecksIdentifier = "aeOt50ngicOD";
 export const tableVisualizationIdentifier = "aatFRvXBdilm";
