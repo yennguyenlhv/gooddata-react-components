@@ -1,7 +1,20 @@
 // (C) 2007-2019 GoodData Corporation
 import React, { Component } from "react";
-import { DateFilter } from "@gooddata/react-components";
+import { DateFilter, ColumnChart, Model, DateFilterHelpers } from "@gooddata/react-components";
 import "@gooddata/react-components/styles/css/dateFilter.css";
+
+import {
+    totalSalesIdentifier,
+    projectId,
+    dateDatasetIdentifier,
+    monthDateIdentifier,
+} from "../utils/fixtures";
+
+const amountMeasure = Model.measure(totalSalesIdentifier)
+    .format("#,##0")
+    .alias("$ Total Sales");
+
+const monthAttribute = Model.attribute(monthDateIdentifier);
 
 const dateFrom = new Date();
 dateFrom.setMonth(dateFrom.getMonth() - 1);
