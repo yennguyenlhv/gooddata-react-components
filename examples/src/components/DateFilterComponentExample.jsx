@@ -204,6 +204,7 @@ export class DateFilterComponentExample extends Component {
 
     render() {
         return (
+            <div>
             <div style={{ width: 300 }}>
                 <DateFilter
                     excludeCurrentPeriod={this.state.excludeCurrentPeriod}
@@ -218,6 +219,16 @@ export class DateFilterComponentExample extends Component {
                     onClose={this.onClose}
                 />
             </div>
+            <div style={{ height: 300 }}>
+            <ColumnChart
+                projectId={projectId}
+                measures={[amountMeasure]}
+                viewBy={monthAttribute}
+                onLoadingChanged={this.onLoadingChanged}
+                filters={dateFilter ? [dateFilter] : []}
+            />
+        </div>
+        </div>
         );
     }
 }
